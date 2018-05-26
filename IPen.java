@@ -89,14 +89,14 @@ public class IPen {
         String[] subjectNames = myGradeBook.getSubjectNames();
         int[][] grades= myGradeBook.getGrades();
         for (int i = 0; i < studentNames.length; i++) {
-            studentNames[i] = setStudentName(i + 1);// qitu i qesum emrat e studenteve
+            studentNames[i] = setStudentName(i + 1);
             for (int j = 0; j < grades[i].length; j++) {
-                grades[i][j] = setStudentGrade(subjectNames[j]);//qitu i qesum notat
+                grades[i][j] = setStudentGrade(subjectNames[j]);
             }
         }
         largest_name = findLargestName(studentNames);
-        myGradeBook.setStudentNames(studentNames);// i vendosim emrat ne GradeBook(ditar)
-        myGradeBook.setGrades(grades);// i vendosim te gjitha notat ne GradeBook(ditar);
+        myGradeBook.setStudentNames(studentNames);
+        myGradeBook.setGrades(grades);
     }
     public void writeTheDiary(){
         setSubjectNames();
