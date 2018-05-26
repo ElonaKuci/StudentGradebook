@@ -33,38 +33,7 @@ public class GradeBook {
     public String getCourseName() {
         return courseName;
     }
-    // find minimum grade
-   /* public int getMinimum() {
-        // assume first element of grades array is smallest
-        int lowGrade = grades[0][0];
-
-        for (int[] studentGrades : grades) {
-            for (int grade : studentGrades) {
-                if (grade < lowGrade) {
-                    lowGrade = grade;
-                }
-            }
-        }
-
-        return lowGrade;
-    }
-
-    // find maximum grade
-    public int getMaximum() {
-        // assume first element of grades array is largest
-        int highGrade = grades[0][0];
-
-        for (int[] studentGrades : grades) {
-            for (int grade : studentGrades) {
-                if (grade > highGrade) {
-                    highGrade = grade;
-                }
-            }
-        }
-
-        return highGrade;
-    }
-*/
+  
     public double getAverage(int[] setOfGrades) {
         int total = 0;
         // sum grades for one student
